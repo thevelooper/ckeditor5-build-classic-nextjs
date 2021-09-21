@@ -1,7 +1,7 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic",
+  "name": "ckeditor5-build-classic-nextjs",
   "version": "29.2.0",
-  "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
+  "description": "The classic editor build of CKEditor 5 – compatible with next-js framework.",
   "keywords": [
     "ckeditor5-build",
     "ckeditor",
@@ -66,13 +66,13 @@
     "node": ">=12.0.0",
     "npm": ">=5.7.1"
   },
-  "author": "CKSource (http://cksource.com/)",
+  "author": "Ali Alizade",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "homepage": "https://thevelooper.com",
+  "bugs": "https://github.com/thevelooper/ckeditor5-build-classic-nextjs/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git",
+    "url": "https://github.com/thevelooper/ckeditor5-build-classic-nextjs",
     "directory": "packages/ckeditor5-build-classic"
   },
   "scripts": {
