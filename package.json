@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-build-classic-nextjs",
-  "version": "29.2.0",
+  "version": "29.4.0",
   "description": "The classic editor build of CKEditor 5 – compatible with next-js framework.",
   "keywords": [
     "ckeditor5-build",
