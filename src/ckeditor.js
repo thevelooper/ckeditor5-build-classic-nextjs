@@ -34,6 +34,8 @@ import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment";
 import SimpleUploadAdapter from "@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter";
 import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting";
 
+import Font from '@ckeditor/ckeditor5-font/src/font';
+
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -64,6 +66,7 @@ ClassicEditor.builtinPlugins = [
   Alignment,
   SimpleUploadAdapter,
   SourceEditing,
+  Font
 ];
 
 // Editor configuration.
@@ -87,11 +90,13 @@ ClassicEditor.defaultConfig = {
       // "|",
       "imageUpload",
       // "blockQuote",
-      "insertTable",
       "undo",
       "redo",
+      "insertTable",
       "mediaEmbed",
       "sourceEditing",
+      "fontColor",
+      "fontBackgroundColor",
     ],
   },
   // image: {
