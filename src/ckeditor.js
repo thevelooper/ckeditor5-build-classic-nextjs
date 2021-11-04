@@ -12,9 +12,10 @@ import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
 import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor.js';
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor.js';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading.js';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight.js';
+import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline.js';
 import Image from '@ckeditor/ckeditor5-image/src/image.js';
-import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle.js';
-import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar.js';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize.js';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload.js';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic.js';
 import Link from '@ckeditor/ckeditor5-link/src/link.js';
@@ -25,10 +26,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat.js';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter.js';
 import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting.js';
-import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
-import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
-import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 
 class Editor extends ClassicEditor {}
@@ -44,9 +42,10 @@ Editor.builtinPlugins = [
 	FontBackgroundColor,
 	FontColor,
 	Heading,
+	Highlight,
+	HorizontalLine,
 	Image,
-	ImageStyle,
-	// ImageToolbar,
+	ImageResize,
 	ImageUpload,
 	Italic,
 	Link,
@@ -57,10 +56,7 @@ Editor.builtinPlugins = [
 	RemoveFormat,
 	SimpleUploadAdapter,
 	SourceEditing,
-	Strikethrough,
 	Table,
-	// TableToolbar,
-	TextTransformation,
 	Underline
 ];
 
@@ -71,12 +67,13 @@ Editor.defaultConfig = {
 			'heading',
 			'|',
 			'alignment',
-			'fontColor',
 			'fontBackgroundColor',
+			'fontColor',
+			'|',
 			'bold',
 			'italic',
-			'strikethrough',
 			'underline',
+			'horizontalLine',
 			'link',
 			'bulletedList',
 			'numberedList',
@@ -86,26 +83,12 @@ Editor.defaultConfig = {
 			'mediaEmbed',
 			'undo',
 			'redo',
+			'highlight',
 			'removeFormat',
 			'sourceEditing'
 		]
 	},
-	language: 'en',
-	// image: {
-	// 	toolbar: [
-	// 		'imageTextAlternative',
-	// 		'imageStyle:inline',
-	// 		'imageStyle:block',
-	// 		'imageStyle:side'
-	// 	]
-	// },
-	// table: {
-	// 	contentToolbar: [
-	// 		'tableColumn',
-	// 		'tableRow',
-	// 		'mergeTableCells'
-	// 	]
-	// }
+	language: 'en'
 };
 
 export default Editor;

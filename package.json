@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-build-classic-nextjs",
-  "version": "29.5.11",
+  "version": "29.5.13",
   "description": "The classic editor build of CKEditor 5 – compatible with next-js framework.",
   "keywords": [
     "ckeditor5-build",
@@ -31,6 +31,8 @@
     "@ckeditor/ckeditor5-essentials": "^31.0.0",
     "@ckeditor/ckeditor5-font": "^31.0.0",
     "@ckeditor/ckeditor5-heading": "^31.0.0",
+    "@ckeditor/ckeditor5-highlight": "^31.0.0",
+    "@ckeditor/ckeditor5-horizontal-line": "^31.0.0",
     "@ckeditor/ckeditor5-image": "^31.0.0",
     "@ckeditor/ckeditor5-link": "^31.0.0",
     "@ckeditor/ckeditor5-list": "^31.0.0",
@@ -41,7 +43,6 @@
     "@ckeditor/ckeditor5-source-editing": "^31.0.0",
     "@ckeditor/ckeditor5-table": "^31.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^31.0.0",
-    "@ckeditor/ckeditor5-typing": "^31.0.0",
     "@ckeditor/ckeditor5-upload": "^31.0.0",
     "css-loader": "^5.2.7",
     "postcss": "^8.3.11",
